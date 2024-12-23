@@ -10,6 +10,11 @@
 
     <!-- Iconos bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Iconos Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+
+    <!-- Lightgallery -->
+    <link rel="stylesheet" href="./assets/lightgallery/css/lightgallery-bundle.min.css">
 
     <!-- Styles -->
     <link rel="stylesheet" href="./css/styles.css">
@@ -19,34 +24,34 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-white fixed-top py-4">
             <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Pamela Barraza</h5>
+                        <h5 class="offcanvas-title fs-3" id="offcanvasNavbarLabel">Pamela Barraza</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-start flex-grow-1 pe-3 text-uppercase gap-3">
                             <li class="nav-item">
-                                <a class="nav-link active" href="#">Inicio</a>
+                                <a class="nav-link" href="#home">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Biografía</a>
+                                <a class="nav-link" href="#biografia">Biografía</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Libros</a>
+                                <a class="nav-link" href="#libros">Libros</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Poemas</a>
+                                <a class="nav-link" href="#poemas">Poemas</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contacto</a>
+                                <a class="nav-link" href="#contacto">Contacto</a>
                             </li>
                         </ul>
                         <!-- RRSS -->
-                        <ul class="rrss-menu">
+                        <ul class="rrss-menu justify-content-start justify-content-lg-end ps-0 mt-4 mt-lg-0">
                             <li><a href=""><i class="bi bi-facebook"></i></a></li>
                             <li><a href=""><i class="bi bi-instagram"></i></a></li>
                             <li><a href=""><i class="bi bi-twitter-x"></i></a></li>
@@ -59,7 +64,7 @@
     </header>
 
     <!-- Slider -->
-    <div id="carouselExample" class="carousel slide">
+    <div id="home" class="carousel slide">
         <div class="carousel-inner">
             <div class="slide-text">
                 <h1 class="titulo">Pamela <span></span> Barraza</h1>
@@ -77,23 +82,23 @@
                 <img src="..." class="d-block w-100" alt="...">
             </div> -->
         </div>
-        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#home" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#home" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button> -->
     </div>
 
     <!-- Biografía -->
-    <section class="container my-5">
+    <section class="container my-5" id="biografia">
         <div class="row gx-lg-5 align-items-center mb-3">
-            <div class="col-lg-3">
+            <div class="col-8 col-md-3 mx-auto mb-3 mb-md-0">
                 <img src="./img/pamela.png" class="img-fluid w-100" alt="Pamela Barraza">
             </div>
-            <div class="col-lg-9">
+            <div class="col-md-9">
                 <h2 class="titulo small">Biografía<br> <span class="script">Pamela Barraza Silva</span></h2>
             </div>
         </div>
@@ -106,7 +111,133 @@
         </div>
     </section>
 
+    <article class="container-fluid bg-rosa-claro py-5 my-5" id="libros">
+        <div class="container">
+            <div class="row align-items-lg-center">
+                <div class="col-md-6 col-lg-5 text-center mb-4 mb-md-0">
+                    <img src="./img/portada.png" class="img-fluid" width="300" alt="">
+                </div>
+                <div class="col-md-6 col-lg-7 text-center">
+                    <h2 class="titulo mb-4">Título del libro</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A vitae ullam ipsam sequi dolor ab pariatur sunt dolore deserunt impedit aliquid possimus, vero molestiae, eligendi beatae facere sapiente autem accusamus cumque eum repellendus? Minima corrupti consequuntur officia eos. Ullam aspernatur ducimus architecto placeat accusantium repellendus quos magni similique tenetur aut, reiciendis dicta nesciunt saepe expedita, consequatur optio sunt nobis aliquid beatae enim deserunt dolor. Praesentium animi eius esse accusamus, minima maiores nostrum omnis veniam molestias ullam neque explicabo commodi recusandae tenetur vitae dolorum laboriosam et cum architecto expedita eveniet? Officiis dolores dolor obcaecati numquam minus corrupti facilis, mollitia enim odit.</p>
+                    <div class="row g-3 mt-4">
+                        <div class="col-lg-6">
+                            <a href="" class="btn btn-outline-color w-100">Descargar Preview</a>
+                        </div>
+                        <div class="col-lg-6">
+                            <a href="" class="btn btn-color w-100">Comprar Libro</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article class="container my-5" id="poemas">
+        <h2 class="titulo text-center mb-5">Poemas</h2>
+        <div class="row poemas" id="lightgallery">
+            <div class="col-md-6 col-lg-4">
+                <figure class="mb-0 position-relative" data-src="./img/poemas/1.jpg">
+                    <img src="./img/poemas/1.jpg"  class="img-fluid w-100" alt="">
+                    <a download href="./img/poemas/1.jpg" class="download-button">
+                        <i class="bi bi-download"></i>   
+                    </a>
+                </figure>
+            </div>
+        </div>
+    </article>
+
+    <section class="container-fluid bg-verde-claro py-5" id="contacto">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <h3 class="titulo mb-4">Escríbeme</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla.</p>
+
+                    <ul class="fa-ul list-unstyled ms-4">
+                        <li class="mb-2"><span class="fa-li"><i class="bi bi-envelope text-rosa"></i></span><a href="mailto:contacto@pamelabarraza.cl" class="text-reset text-decoration-none">contacto@pamelabarraza.cl</a></li>
+                        <li><span class="fa-li"><i class="bi bi-telephone text-rosa"></i></span><a href="tel:8013626114" class="text-reset text-decoration-none">801 3626114</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-7">
+                    <form action="" id="contact-form">
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre">
+                                    <label for="nombre">Nombre</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" name="telefono" id="telefono" class="form-control" placeholder="Teléfono">
+                                    <label for="telefono">Teléfono</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" name="email" id="email" class="form-control" placeholder="Correo electrónico">
+                                    <label for="email">Correo electrónico</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" name="asunto" id="asunto" class="form-control" placeholder="Asunto">
+                                    <label for="asunto">Asunto</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea name="mensaje" id="mensaje" class="form-control" cols="5" rows="10" placeholder="Mensaje" style="min-height: 200px; max-height: 200px;"></textarea>
+                                    <label for="mensaje">Mensaje</label>
+                                </div>
+                            </div>
+                            <div class="col-12 text-end">
+                                <button type="submit" class="btn btn-color"><i class="bi bi-envelope"></i> Enviar mensaje</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-negro">
+        <div class="container py-5 text-center">
+            <p class="titulo text-white my-4">Pamela Barraza Silva</p>
+            <div class="social-foot mb-4">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="container border-top py-4 text-center text-white">
+            <p class="mb-0 text-14 fw-light">©2024 Pamela Barraza Silva - Sitio web realizado por Jorobada Diseño</p>
+        </div>
+    </footer>
+
     <!-- Bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Lightgallery -->
+    <script src="assets/lightgallery/lightgallery.min.js"></script>
+	<!-- PLUGINS -->
+	<script src="assets/lightgallery/plugins/zoom/lg-zoom.min.js"></script>
+	<script src="assets/lightgallery/plugins/fullscreen/lg-fullscreen.min.js"></script>
+	<script src="assets/lightgallery/plugins/share/lg-share.min.js"></script>
+
+	<script type="text/javascript">
+        lightGallery(document.getElementById('lightgallery'), {
+            selector: 'figure',
+            showCloseIcon : true,
+            plugins: [lgZoom, lgFullscreen, lgShare],
+            download: true,
+            mobileSettings: {
+                showCloseIcon: true,
+            },
+        });
+    </script>
 </body>
 </html>

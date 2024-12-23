@@ -102,7 +102,10 @@ p{
     height: 100%;
     width: 100%;
 }
-
+.titulo{
+    font-size: 38px;
+    font-family: "Abril Fatface", serif;
+}
 .titulo.small{
     font-size: 30px;
 }
@@ -110,4 +113,149 @@ p{
     font-family: "Allura", cursive;
     font-size: 65px;
     color: var(--rosado);
+}
+.text-14{
+    font-size: 14px!important;
+}
+.btn{
+    border-radius: 0;
+    padding: .7rem 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.btn-outline-color{
+    color: var(--naranjo);
+    border:1px solid var(--naranjo);
+}
+.btn-outline-color:is(:hover,:focus,:active){
+    background-color: var(--naranjo);
+    color: #fff;
+}
+.btn-color{
+    background-color: var(--naranjo);
+    color: #fff;
+}
+.btn-color:is(:hover){
+    background-color: var(--rosado);
+    color: #fff;
+}
+.bg-rosa-claro{
+    background-color: var(--rosa-claro);
+}
+.bg-verde-claro{
+    background-color: var(--verde-claro);
+}
+.bg-negro{
+    background-color: var(--negro);
+}
+.text-rosa{
+    color: var(--rosado);
+}
+.download-button{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: var(--naranjo);
+    appearance: button;
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: all .3s ease-in-out;
+    z-index: 999;
+}
+.download-button:hover{
+    background-color: var(--negro);
+    color: #fff;
+}
+#contact-form .form-floating .form-control{
+    background-color: rgba(265, 265, 265, .5);
+    border-color: #fff;
+}
+footer .titulo{
+    font-size: 45px;
+}
+footer .social-foot{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+}
+footer .social-foot a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 39px!important;
+    height: 38px!important;
+    border-radius: 50%;
+    background-color: var(--rosado);
+    color: #fff;
+    text-decoration: none;
+    transition: all .3s ease-in-out;    
+}
+footer .social-foot a:is(:hover,:active,:focus){
+    background-color: var(--rosa-claro);
+    color: var(--rosado);
+}
+
+@media screen and (min-width: 0px) {
+    .carousel-inner .titulo{
+        font-size: 70px;
+    }
+    .carousel-inner .titulo span{
+        width: 0%;
+    }
+    .titulo .script{
+        font-size: 55px;
+    }
+}
+@media screen and (min-width: 576px) {
+    .carousel-inner .titulo{
+        font-size: 80px;
+    }
+    .titulo .script{
+        font-size: 60px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .carousel-inner .titulo{
+        font-size: 80px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .carousel-inner .titulo{
+        font-size: 80px;
+    }
+    .carousel-inner .titulo span{
+        width: 10%;
+    }
+    .titulo .script{
+        font-size: 65px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .carousel-inner .titulo{
+        font-size: 85px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .carousel-inner .titulo{
+        font-size: 100px;
+    }
+    .carousel-inner .titulo span{
+        width: 15%;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .carousel-inner .titulo{
+        font-size: 130px;
+    }
 }
