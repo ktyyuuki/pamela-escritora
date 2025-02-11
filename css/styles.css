@@ -18,6 +18,7 @@ h1,h2,h3,h4,h5,h6{
 p{
     font-weight: 300;
 }
+
 .navbar .nav-item .nav-link{
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 1px;
@@ -207,19 +208,58 @@ footer .social-foot a:is(:hover,:active,:focus){
 }
 
 @media screen and (min-width: 0px) {
+    .navbar{
+        background-color: transparent;
+    }
+    .carousel-inner .slide-text{
+        width: 90%;
+    }
     .carousel-inner .titulo{
-        font-size: 70px;
+        font-size: 40px;
     }
     .carousel-inner .titulo span{
-        width: 0%;
+        width: 10%;
+    }
+    .carousel-inner .slide-text .subtitulo{
+        font-size: 12px;
+    }
+    .carousel-item {
+        padding-top: 0;
+    }
+    .carousel-item figure img{
+        width: 265px;
     }
     .titulo .script{
         font-size: 55px;
     }
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 400px) {
     .carousel-inner .titulo{
-        font-size: 80px;
+        font-size: 45px;
+    }
+    .carousel-inner .slide-text .subtitulo{
+        font-size: 13px;
+    }
+    .carousel-item figure img{
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .carousel-inner .slide-text{
+        width: 80%;
+    }
+    .carousel-inner .titulo{
+        font-size: 65px;
+    }
+    .carousel-inner .slide-text .subtitulo{
+        font-size: 16px;
+    }
+    .carousel-item {
+        padding-top: 85px;
+    }
+    .carousel-item figure img{
+        width: 330px;
     }
     .titulo .script{
         font-size: 60px;
@@ -227,10 +267,16 @@ footer .social-foot a:is(:hover,:active,:focus){
 }
 @media screen and (min-width: 768px) {
     .carousel-inner .titulo{
-        font-size: 80px;
+        font-size: 72px;
+    }
+    .carousel-item figure img{
+        width: 400px;
     }
 }
 @media screen and (min-width: 992px) {
+    .navbar{
+        background-color: #fff;
+    }
     .carousel-inner .titulo{
         font-size: 80px;
     }
