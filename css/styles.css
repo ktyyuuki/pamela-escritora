@@ -152,6 +152,10 @@ p{
 .text-rosa{
     color: var(--rosado);
 }
+.galeria figure img{
+    aspect-ratio: 1;
+    object-fit: cover;
+}
 .download-button{
     position: absolute;
     top: 1rem;
@@ -174,6 +178,7 @@ p{
     background-color: var(--negro);
     color: #fff;
 }
+
 #contact-form .form-floating .form-control{
     background-color: rgba(265, 265, 265, .5);
     border-color: #fff;
